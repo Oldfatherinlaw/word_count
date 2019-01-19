@@ -1,0 +1,11 @@
+<h1>统计结果为{{ count }}字</h1>
+<h2>显示你要检查的文字</h2>
+{{ text }}
+<br>
+<br>
+{% for key, value in sorted %}
+{{ key }} - {{ value }}
+<br>
+{% endfor %}
+
+
