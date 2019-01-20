@@ -1,11 +1,10 @@
-<h1>统计结果为{{ count }}字</h1>
-<h2>显示你要检查的文字</h2>
+<h1>文本一共有{{ count }}个字</h1>
+<h2>显示文本内容</h2>
 {{ text }}
 <br>
+{% for key, value in sort %}
 <br>
-{% for key, value in sorted %}
-{{ key }} - {{ value }}
+{{ key }} - {{ value}}
+{% endfor%}
 <br>
-{% endfor %}
-
-
+<a href="..">回到主页</a>

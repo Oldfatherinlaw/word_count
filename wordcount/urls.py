@@ -1,4 +1,4 @@
-"""wordcount_2 URL Configuration
+"""wordcount_3 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -20,5 +20,7 @@ from . import function
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', function.home),
-    path('count', function.count),
+    path('count/', function.count),
+    path('about', function.about),
+    
 ]
